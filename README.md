@@ -12,6 +12,9 @@ Formato compatível com o CLI [`skills`](https://github.com/obra/skills): cada s
 | Skill | O que faz | Quando usar |
 |-------|-----------|-------------|
 | [`raio-x-de-produto`](skills/raio-x-de-produto/SKILL.md) | Roda um raio-x numa **code base** ou em **telas** e devolve achados priorizados por onde o produto vaza receita (conversão, ativação, TTV, churn, LTV), com evidência localizável e correção concreta. | Antes de lançar/refatorar uma tela, LP, checkout, pricing, onboarding ou dashboard — quando você quer saber **onde está vazando dinheiro**, não se está "bonito". |
+| [`produto-viral`](skills/produto-viral/SKILL.md) | Audita uma landing/produto (**telas** ou **code base**) contra os **32 princípios de produto viral** e devolve um placar ("22/32") com o que passa, o que falha e como corrigir. | Antes de publicar uma landing page ou lançar um produto — quando você quer um checklist opinativo e rápido de **virality + oferta + copy**. |
+
+> **Qual usar?** `raio-x-de-produto` é o diagnóstico **amplo** de CRO + comportamento (vários tipos de tela, achados por impacto). `produto-viral` é um **checklist opinativo** de 32 itens focado em landing/oferta/copy, com placar. Dá para rodar os dois.
 
 ### `raio-x-de-produto`
 - **Ativação:** só manual — digite `/raio-x-de-produto` no prompt (é `disable-model-invocation: true`,
@@ -20,6 +23,14 @@ Formato compatível com o CLI [`skills`](https://github.com/obra/skills): cada s
 - **Saída:** relatório em português — veredito, "conserta primeiro" (top 3), achados por
   superfície e lacunas do que não deu para avaliar.
 - A régua é uma só: **"design que não move receita é decoração."**
+
+### `produto-viral`
+- **Ativação:** só manual — digite `/produto-viral` no prompt (`disable-model-invocation: true`).
+- **Entrada:** aponte a landing/produto no código ou anexe prints.
+- **Saída:** relatório em português — placar dos 32, "conserta primeiro" (top 3), tabela item a
+  item e detalhe das falhas.
+- Princípios agressivos (sem plano grátis, sem assinatura, cobre mais) são tratados como
+  **trade-off consciente** quando seu modelo de negócio contradiz de propósito — não como falha cega.
 
 ## Instalar
 
