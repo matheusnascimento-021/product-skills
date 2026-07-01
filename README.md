@@ -4,8 +4,9 @@ Coleção de skills para Claude Code focadas em **produto, conversão (CRO) e ci
 comportamental** — ferramentas de diagnóstico que rodam direto na sua code base ou
 nas suas telas.
 
-Formato compatível com o CLI [`skills`](https://github.com/obra/skills): cada skill
-é uma pasta em `skills/<nome>/` com um `SKILL.md`.
+Formato compatível com o CLI [`skills`](https://github.com/vercel-labs/skills) (o
+"open agent skills ecosystem", que roda com `npx skills`): cada skill é uma pasta em
+`skills/<nome>/` com um `SKILL.md`.
 
 ## Skills
 
